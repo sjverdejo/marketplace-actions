@@ -1,0 +1,12 @@
+name: Python app
+on: push
+jobs:
+  build:
+    name: Building a python app
+    runs-on: ubuntu-latest
+    steps:
+    - name: check out the repo
+      uses: actions/checkout@v4
+    - name: Python syntax checker
+      uses: cclauss/Find-Python-syntax-errors-action@v0.2.0
+          
